@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /privacidad.html
 Disallow: /404.html
-Sitemap: https://www.ingservicesc.com/sitemap.xml
+Sitemap: https://ingservicesc.github.io/Ingservice-web/sitemap.xml

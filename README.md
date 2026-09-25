@@ -1,4 +1,4 @@
-# Ing-Service SC — Web V3
+# Ing-Service SC — Web V4
 
 Sitio corporativo estático de Ing-Service SC, preparado para publicarse sin hosting de pago.
 
@@ -15,7 +15,7 @@ Sitio corporativo estático de Ing-Service SC, preparado para publicarse sin hos
 - Sin base de datos y sin servidor: el sitio puede funcionar como web estática.
 
 ## Publicación gratuita recomendada
-La versión V3 está preparada para publicarse como sitio estático en un servicio con plan gratuito. El dominio propio es opcional; primero puede utilizarse una dirección gratuita y posteriormente conectar un dominio.
+La versión V4 está preparada para publicarse como sitio estático en un servicio con plan gratuito. El dominio propio es opcional; primero puede utilizarse una dirección gratuita y posteriormente conectar un dominio.
 
 ## Antes de publicar
 1. Confirmar el dominio definitivo. Si no existe dominio propio, mantener la configuración de publicación gratuita.
@@ -33,3 +33,10 @@ No se inventaron dirección física, horarios, perfiles sociales ni credenciales
 La web está preparada para Google Analytics 4. Antes de publicar, crea una propiedad gratuita en Google Analytics y obtén el ID de medición (formato `G-XXXXXXXXXX`). Luego se reemplaza el marcador en `index.html` y se habilita el bloque de Analytics. No hace falta pagar por Google Analytics.
 
 Después de publicar también podemos conectar Google Search Console para revisar búsquedas, clics e indexación.
+
+## Cambios de esta V4
+- Logo oficial incorporado en encabezado, pie de página y favicon.
+- Nuevas fotografías reales de campo clasificadas por tipo de servicio.
+- Galerías múltiples en las páginas de servicios.
+- Galería de fotos de campo en la página principal.
+- Imágenes optimizadas para web y carga más eficiente.
