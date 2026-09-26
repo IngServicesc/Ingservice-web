@@ -36,5 +36,5 @@ jobs:
         uses: actions/deploy-pages@v4
 
       - name: Publicar en GitHub Pages
-        id: deployment
+        id: pages_deployment
         uses: actions/deploy-pages@v4
