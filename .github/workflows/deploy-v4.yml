@@ -14,6 +14,7 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -25,18 +26,14 @@ jobs:
       - name: Preparar GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Extraer sitio web V4
-        run: |
-          rm -rf site extracted-site
-          mkdir -p site extracted-site
-          unzip -q Ing-Service-SC-Web-v4-GitHub.zip -d extracted-site
-          cp -R extracted-site/ingservice-web/. site/
-          touch site/.nojekyll
-
       - name: Cargar sitio
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./site
+          path: .
+
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
 
       - name: Publicar en GitHub Pages
         id: deployment
