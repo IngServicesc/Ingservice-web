@@ -21,20 +21,16 @@ jobs:
 
     steps:
       - name: Descargar archivos del repositorio
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Preparar GitHub Pages
         uses: actions/configure-pages@v5
 
       - name: Cargar sitio
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: .
 
       - name: Publicar en GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
-
-      - name: Publicar en GitHub Pages
-        id: pages_deployment
         uses: actions/deploy-pages@v4
